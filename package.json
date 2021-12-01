@@ -1,0 +1,38 @@
+{
+  "name": "diabetins",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "chart.js": "^3.6.0",
+    "child_process": "^1.0.2",
+    "cloudinary": "^1.27.1",
+    "concurrently": "^6.3.0",
+    "cookie-parser": "^1.4.5",
+    "cron": "^1.8.2",
+    "csv-parser": "^3.0.0",
+    "dataframe-js": "^1.4.4",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.13.5",
+    "node-cron": "^3.0.0",
+    "nodemailer": "^6.7.0",
+    "nodemailer-smtp-transport": "^2.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
