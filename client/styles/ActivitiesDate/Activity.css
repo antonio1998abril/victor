@@ -1,0 +1,58 @@
+.ButtonGlucosa {
+padding-right: 2.5rem;
+
+}
+
+.text-Satus-Icon{
+    font-family: 'ubuntu';
+    margin-left: 3.5rem;
+    margin-top: -2.6rem;
+    font-size: 1.1rem;
+}
+ .setup{
+    background: rgb(165, 69, 69);
+    color:rgb(252, 249, 249);
+    transition: all 0.4s ease;
+    border-radius: 50px  50px 50px  50px;
+    box-shadow: 0 0 25px rgb(219, 218, 211);
+}
+
+.setup:hover{
+    box-shadow: 0 1px 25px rgba(175, 3, 3, 0.842); 
+}
+.noBackGroundIcon{
+    background-image: radial-gradient(at center, red 50%, transparent 50%);
+    margin-left: -4px;
+}
+
+.commonButton {
+    transition: all 0.5s ease;
+   
+}
+.commonButton:hover{
+    box-shadow: 0 0 25px rgb(163, 147, 64); 
+    border-style: none;
+   }
+
+
+.addACT{
+    margin-top: -19px;
+    color:orange;
+    transition: all 0.5s ease;
+    float: right;
+    font-size: 2.50rem;
+}
+
+.addACT:hover{
+    color: orangered;
+
+}
+.hover-card{
+    transition: all 0.5s ease;
+}
+ .hover-card:hover{
+    box-shadow: 0 0 25px rgb(201, 201, 201); 
+}
+
+
+

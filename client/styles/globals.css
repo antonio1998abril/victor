@@ -1,0 +1,157 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: #f4f6f9;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+/*  a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+  */
+
+  a {
+    color: inherit;
+    text-decoration: none!important;
+  }
+  
+ @import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+ .ubuntu {
+   font-family: 'Ubuntu';
+ }
+ .MagNet {
+   width: 3rem;
+   height: 3rem;
+   margin-left: 5%;
+   -webkit-box-align: center;
+ }
+  .main {
+  position: relative;
+   min-height: 100vh;
+   background: #f4f6f9; 
+ }
+
+ .content-wrap {
+  padding-bottom: 5.5rem;    
+  margin-left: 8%;
+  margin-right: 3%; 
+ }
+
+ @media (max-width: 800px) {
+   .content-wrap  {
+    margin-left: 20%;
+    }
+} 
+.footer {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 2.5rem;  
+ }
+
+ .footer a {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-grow: 1;
+ }
+
+ /* header color*/
+.borderHeader{
+  border-bottom:  1px solid #eeeeee;
+  z-index: 1034; 
+  box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+  margin-top: -25px;
+  background: white; 
+}
+
+.headerPosition{
+ z-index: 1;
+}
+
+/* ICON NOTIFICATION */
+
+.bell-icon{
+  position: absolute;  
+  /*   z-index: -1; */
+  margin-left: -100px;  
+}  
+.bell-icon  span {
+  background: rgb(255, 61, 2);
+  border-radius:20px;
+  color:rgb(255, 255, 255);
+  position: absolute;
+/*   top:100px; */
+  right: -1px; 
+  padding: 2px 7px;
+  font-size: 12px;
+  z-index: 1;
+}
+
+.bellStyle{
+  background-position: left;
+  background-size: 2900% ;
+  width: 24px;
+  margin-left: 350px;
+  transform: translate(-50%,-50%); 
+  color: #f4f6f9; 
+  stroke: rgb(80, 67, 67);
+  stroke-width: 15;
+  margin-top: 20px;
+}
+
+@media (max-width: 1000px) {
+  .bellStyle{
+      margin-left: 300px;
+  }
+}
+  @media (max-width: 280px) {
+      .bellStyle{
+          margin-left: 250px;
+      }
+  }
+
+
+  /* GRAPHS CUSTOMIZATION */
+.graphjs {
+   /*width:calc(100vw - 40px);*/
+   width: 90%;
+   /*height: calc(100vh - 40px);*/
+   height: 100%;
+   background-color: #fff;
+   padding: 10px;
+   box-sizing: border-box;
+   margin:20px;
+   border: 1px solid rgba(0,0,0,.125);
+   border-radius: 0.25rem;
+   word-wrap: break-word;
+   min-width: 0;
+   word-wrap: break-word;
+   transition: all 0.5s ease; 
+}
+
+.graphjs:hover {
+  box-shadow: 0 0 15px rgb(209, 209, 209);
+}
+
+
+@import url("Sidebar/sidebar.css");
+@import url("DataStatus/table.css");
+@import url("Table/table.css");
+@import url("Home/home.css");
+@import url("Loader/loader.css");
+@import url("Login/login.css"); 
+@import url("Register/register.css"); 
+@import url("Config/config.css"); 
+@import url("Pacientes/pacientes.css");
+@import url("Result/result.css");  
+@import url("Create/Create.css"); 
+@import url("ActivitiesDate/Activity.css");

@@ -1,0 +1,179 @@
+.sidebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    width: 60px;
+    /* height: 600px; */
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 1px;
+    overflow-x: hidden;
+    -webkit-transition: width 300ms ease;
+    transition: width 300ms ease;
+    z-index:1;  
+    /* box-shadow: 0px 0px 12px 4px #bebebe; */
+  }
+  
+  .sidebar:hover {
+    width: 175px;
+  }
+  
+  .sidebar:hover .nav__item.active .nav__item-icon ,
+  .sidebar:hover .nav__item.active .nav__item-name {
+    -webkit-box-shadow: 0px 0px 15px 5px #eeeeee;
+    box-shadow: 0px 0px 15px 5px #f7f4f4;
+    margin-left: 5px;
+  }
+
+  .sidebar:hover .nav__item.active .nav__item-name {
+    color: darkcyan;
+  }
+  .sidebar .nav__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  
+  .sidebar .nav__item {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 35px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+     margin-top: 5px; 
+    margin-bottom: 5px;
+  }
+  
+  .sidebar .nav__item.active {
+    padding-left: 5px;
+  }
+  
+  .sidebar .nav__item.active::after,
+  .sidebar .nav__item.active::before {
+    -webkit-transition: opacity 300ms 150ms ease-in-out;
+    transition: opacity 300ms 150ms ease-in-out;
+    opacity: 1;
+  }
+  
+  .sidebar .nav__item.active * {
+    color: #fc8f00;
+    font-weight: 900;
+    
+  }
+  .sidebar .nav__item.active:hover {
+    background-color: #f1f1f1;
+  }
+  /* background icono */
+  .sidebar .nav__item.active .nav__item-icon {
+    background-color: #f4f6f9;
+    border-radius: 8px;
+    
+  }
+  /* background title */
+  .sidebar .nav__item.active .nav__item-name {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #f4f6f9;
+    margin-left: -2px;
+  }
+  
+  .sidebar .nav__item::before,
+  .sidebar .nav__item::after {
+    position: absolute;
+    right: 0;
+    width: 29.5px;
+    height: 28px; 
+    content: "";
+    border-radius: 100%;
+    opacity: 0;
+    -webkit-transition: opacity 100ms ease-in-out;
+    transition: opacity 100ms ease-in-out;
+    
+  }
+  
+  .sidebar .nav__item::before {
+     top: -28px; 
+    -webkit-box-shadow: 15px 15px 0px 0px #f4f6f9;
+    box-shadow: 15px 15px 0px 0px#f4f6f9;
+  }
+  
+  .sidebar .nav__item::after {
+     bottom: -28px; 
+    -webkit-box-shadow: 15px -15px 0px 0px #f4f6f9;
+    box-shadow: 15px -15px 0px 0px #f6f7f8;
+  }
+  
+   .sidebar .nav__item-name{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    height: 35px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding-left: 15px;
+    color: #000000;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    font-weight: 480;
+
+  }
+
+  .sidebar .nav__item:hover{
+    background-color:rgb(214, 214, 214);
+    border-radius: 5px;
+  }
+
+  .sidebar .nav__container a{
+    text-decoration: none!important;
+  }
+
+  .sidebar .nav__item-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 35px;
+    height: 35px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    margin-left: 10px;
+  }
+  
+  .sidebar .nav__item-icon  {
+    font-size: 1.5em; 
+    color: rgb(87, 87, 87);
+  }
+   

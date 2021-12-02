@@ -1,0 +1,20 @@
+element.style {
+    width: 57%;
+}
+.bg-green, .bg-green>a {
+    color: #fff!important;
+}
+.bg-green {
+    background-color: #28a745!important;
+}
+
+div > .labelCommon{
+    line-height:2rem;
+    margin-left: 20px;
+    margin-top: -2rem;
+}
+
+.textList {
+    font-family: 'ubuntu';
+    line-height: 2rem;
+}
