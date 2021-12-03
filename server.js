@@ -209,91 +209,8 @@ function getremind(time) {
         Remember2.getHours().toString().padStart(2, "0") +
         ":" +
         Remember2.getMinutes().toString().padStart(2, "0");
-      /*              
-                } else 
-                } else if (State.numbertype == 3 && State.Status == false) {
-                  let notifications = new Notification({
-                    title: `Muy pronto la actividad ${State.Activityname} para ${State.name} ${State.lastname}  `,
-                    Content: `Debera de completarse antes del  ${State.DateToComplete} a las ${State.TimeToComplete} Al no tomar una aspirina diaria podrías aumentar tus probabilidades de sufrir un infarto cardiaco en un 65.51%.`,
-                    user_id: Medics[i],
-                  });
-                  notifications.save().then(() => {
-                    console.log("new Notification");
-                  });
-                } else if (State.numbertype == 3 && State.Status == true) {
-                  let notifications = new Notification({
-                    title: `Bien hecho la ${State.Activityname} para ${State.name} ${State.lastname} fue completada exitosamente `,
-                    Content: `Al tomar una aspirina diaria como habito de prevención reduces la probabilidad de sufrir un infarto al corazón en un 65.51%. `,
-                    user_id: Medics[i],
-                  });
-                  notifications.save().then(() => {
-                    console.log("new Notification");
-                  });
-                } else if (State.numbertype == 4 && State.Status == false) {
-                  let notifications = new Notification({
-                    title: `Muy pronto la actividad ${State.Activityname} para ${State.name} ${State.lastname}  `,
-                    Content: `Debera de completarse antes del  ${State.DateToComplete} a las ${State.TimeToComplete} Al no cumplir con el tratamiento indicado por tu médico de forma adecuada aumentas tus posibilidades de desarrollar insuficiencia renal aguda en un 86.11% y de presentar un infarto cardiaco en un 79.16%. `,
-                    user_id: Medics[i],
-                  });
-                  notifications.save().then(() => {
-                    console.log("new Notification");
-                  });
-                } else if (State.numbertype == 4 && State.Status == true) {
-                  let notifications = new Notification({
-                    title: `Bien hecho la ${State.Activityname} para ${State.name} ${State.lastname} fue completada exitosamente `,
-                    Content: `llevar acabo un adecuado control de los niveles de glucosa en la sangre, con el apoyo del tratamiento indicado, reduces en un 86.11% tus probabilidades de desarrollar Insuficiencia renal aguda y 79.16 la probabilidad de sufrir un infarto cardiaco. `,
-                    user_id: Medics[i],
-                  });
-                  notifications.save().then(() => {
-                    console.log("new Notification");
-                  });
-                } else if (State.numbertype == 5 && State.Status == false) {
-                  let notifications = new Notification({
-                    title: `Muy pronto la actividad ${State.Activityname} para ${State.name} ${State.lastname}  `,
-                    Content: `Debera de completarse antes del  ${State.DateToComplete} a las ${State.TimeToComplete} Es importante que revises de forma habitual tus niveles de glucosa en sangre capilar pues un control inadecuado puede desencadenar complicaciones como disminución o perdida de la vista, aparición de ulceras o amputación en pies o piernas, insuficiencia renal aguda e infarto cardiaco. `,
-                    user_id: Medics[i],
-                  });
-                  notifications.save().then(() => {
-                    console.log("new Notification");
-                  });
-                } else if (State.numbertype == 5 && State.Status == true) {
-                  let notifications = new Notification({
-                    title: `Bien hecho la ${State.Activityname} para ${State.name} ${State.lastname} fue completada exitosamente `,
-                    Content: `Al revisar con frecuencia tus niveles de azúcar en la sangre puedes prevenir diferentes complicaciones de la diabetes como:  disminución o pérdida total de la vista, insuficiencia renal aguda, ulceraciones en pies o piernas e infarto cardiaco.  `,
-                    user_id: Medics[i],
-                  });
-                  notifications.save().then(() => {
-                    console.log("new Notification");
-                  });
-                } */
-      /* else if (State.numbertype == 6 && State.Status == false) {
-                  let notifications = new Notification({
-                    title: `Muy pronto la actividad ${State.Activityname} para ${State.name} ${State.lastname}  `,
-                    Content: `Debera de completarse antes del  ${State.DateToComplete} a las ${State.TimeToComplete} El que tus niveles de lípidos en la sangre no sean los adecuados puede provocar la necesidad de medicamentos para su control, lo que aumenta 75% tus posibilidades de desarrollar insuficiencia renal aguda. `,
-                    user_id: Medics[i],
-                  });
-                  notifications.save().then(() => {
-                    console.log("new Notification");
-                  });
-                } else if (State.numbertype == 6 && State.Status == true) {
-                  let notifications = new Notification({
-                    title: `Bien hecho la ${State.Activityname} para ${State.name} ${State.lastname} fue completada exitosamente `,
-                    Content: `Mantener tus niveles de lípidos en la sangre evita que requieras para ello el apoyo de medicamentos, disminuyendo así un 75% tus probabilidades de desarrollar insuficiencia renal aguda.`,
-                    user_id: Medics[i],
-                  });
-                  notifications.save().then(() => {
-                    console.log("new Notification");
-                  });
-                } else if (State.numbertype == 7 && State.Status == false) {
-                  let notifications = new Notification({
-                    title: `Muy pronto la actividad ${State.Activityname} para ${State.name} ${State.lastname}  `,
-                    Content: `Debera de completarse antes del  ${State.DateToComplete} a las ${State.TimeToComplete} El consumir bebidas alcohólicas aumenta 83.33% tus posibilidades de desarrollar insuficiencia renal aguda y contribuye al desarrollo de otras complicaciones como disminución o perdida de la vista e infarto cardiaco. `,
-                    user_id: Medics[i],
-                  });
-                  notifications.save().then(() => {
-                    console.log("new Notification");
-                  });
-                } else if (State.numbertype == 7 && State.Status == true) {
+
+      /*   if (State.numbertype == 7 && State.Status == true) {
                   let notifications = new Notification({
                     title: `Bien hecho la ${State.Activityname} para ${State.name} ${State.lastname} fue completada exitosamente `,
                     Content: `Al evitar el consumo de bebidas alcohólicas disminuyes 83.33% tus posibilidades de desarrollar insuficiencia renal aguda. Además previenes otras complicaciones como disminución o perdida de la vista e infarto cardiaco.  `,
@@ -302,38 +219,10 @@ function getremind(time) {
                   notifications.save().then(() => {
                     console.log("new Notification");
                   });
-                } else if (State.numbertype == 8 && State.Status == false) {
-                  console.log("se envio");
-                  let notifications = new Notification({
-                    title: `Muy pronto la actividad ${State.Activityname} para ${State.name} ${State.lastname}  `,
-                    Content: `Debera de completarse antes del  ${State.DateToComplete} a las ${State.TimeToComplete} El fumar aumenta 75% tus probabilidades de desarrollar ulceras en pies o piernas, lo que podría generarte problemas más graves como es la amputación de la extremidad.`,
-                    user_id: Medics[i],
-                  });
-                  notifications.save().then(() => {
-                    console.log("new Notification");
-                  });
-                } else if (State.numbertype == 8 && State.Status == true) {
-                  let notifications = new Notification({
-                    title: `Bien hecho la ${State.Activityname} para ${State.name} ${State.lastname} fue completada exitosamente `,
-                    Content: `Al evitar el consumo de tabaco o dejar de fumar disminuyes 75% tus posibilidades de desarrollar ulceras en pies o piernas. `,
-                    user_id: Medics[i],
-                  });
-                  notifications.save().then(() => {
-                    console.log("new Notification");
-                  });
-                } else 
+                } 
 
 
-                } else {
-                let notifications = new Notification({
-                 title: `Muy pronto la actividad ${State.Activityname} para ${State.name} ${State.lastname}  `,
-                 Content: `Debera de completarse antes del  ${State.DateToComplete} a las ${State.TimeToComplete}`,
-                 user_id: Medics[i]
-               })
-                 notifications.save().then(() => {
-                   console.log("new Notification")
-                 })
-                } */
+                 */
       /*             let mailOptions = {
                               from: process.env.MESSAGEEMAIL,
                               to: info.email, 
@@ -353,8 +242,8 @@ function getremind(time) {
           case 1:
             if (State.Status == false) {
               let notifications = new Notification({
-                title: `Muy pronto la actividad ${State.Activityname} para ${State.name} ${State.lastname}  `,
-                Content: `Debera de completarse antes del  ${State.DateToComplete} a las ${State.TimeToComplete} Es importante que revises tus pies y piernas. El no realizarlo de manera habitual aumenta 68.57% tus posibilidades de desarrollar ulceras que pueden convertirse en lesiones graves. `,
+                title: `El realizar de manera habitual las diferentes actividades asignadas durante la semana te ayuda a prevenir diferentes complicaciones derivadas de un control inadecuado de la enfermedad. Continúa cuidando tu salud y sigue al pie de la letra las indicaciones de tus médicos.  Muy pronto la actividad ${State.Activityname} para ${State.name} ${State.lastname}  `,
+                Content: `Debera de completarse antes del  ${State.DateToComplete} a las ${State.TimeToComplete}, Es importante que revises tus pies y piernas. El no realizarlo de manera habitual aumenta 68.57% tus posibilidades de desarrollar ulceras que pueden convertirse en lesiones graves. `,
                 user_id: medic,
               });
               notifications.save().then(() => {
@@ -362,7 +251,7 @@ function getremind(time) {
               });
             } else if (State.Status == true) {
               let notifications = new Notification({
-                title: `Bien hecho la ${State.Activityname} para ${State.name} ${State.lastname} fue completada exitosamente `,
+                title: `Bien hecho la  actividad ${State.Activityname} para ${State.name} ${State.lastname} fue completada exitosamente `,
                 Content: `Al revisar tus pies o piernas reduces un 68.57% la probabilidad de desarrollar ulceras `,
                 user_id: medic,
               });
@@ -374,18 +263,18 @@ function getremind(time) {
           case 2:
             if ( State.Status == false) {
               let notifications = new Notification({
-                title: `Muy pronto la actividad ${State.Activityname} para ${State.name} ${State.lastname}  `,
-                Content: `Debera de completarse antes del  ${State.DateToComplete} a las ${State.TimeToComplete} Al no seguir el plan alimenticio indicado aumentas 59.34% tus probabilidades de perder la vista, 84.12% tus probabilidades de un evento de coma diabético y 64.28% tus posibilidades de sufrir un infarto cardiaco. Además, podrías desarrollar otras complicaciones como insuficiencia renal aguda e infarto cerebral. `,
-                user_id: Medics[i],
+                title: `El realizar de manera habitual las diferentes actividades asignadas durante la semana te ayuda a prevenir diferentes complicaciones derivadas de un control inadecuado de la enfermedad. Continúa cuidando tu salud y sigue al pie de la letra las indicaciones de tus médicos.  Muy pronto la actividad ${State.Activityname} para ${State.name} ${State.lastname}  `,
+                Content: `Debera de completarse antes del  ${State.DateToComplete} a las ${State.TimeToComplete}, Al no seguir el plan alimenticio indicado aumentas 59.34% tus probabilidades de perder la vista, 84.12% tus probabilidades de un evento de coma diabético y 64.28% tus posibilidades de sufrir un infarto cardiaco. Además, podrías desarrollar otras complicaciones como insuficiencia renal aguda e infarto cerebral. `,
+                user_id: medic,
               });
               notifications.save().then(() => {
                 console.log("new Notification");
               });
             } else if ( State.Status == true) {
               let notifications = new Notification({
-                title: `Bien hecho la ${State.Activityname} para ${State.name} ${State.lastname} fue completada exitosamente `,
+                title: `Bien hecho la actividad ${State.Activityname} para ${State.name} ${State.lastname} fue completada exitosamente `,
                 Content: `Siguiendo el plan alimenticio indicado disminuyes 59.34% tus probabilidades de pérdida de la vista, un 84.12% tus posibilidades de un evento de coma diabético y 64.28% la probabilidad de un infarto cardiaco. Además, previenes otras complicaciones como insuficiencia renal aguda e infarto cerebral. `,
-                user_id: Medics[i],
+                user_id: medic,
               });
               notifications.save().then(() => {
                 console.log("new Notification");
@@ -393,28 +282,10 @@ function getremind(time) {
             }
             break;
           case 3:
-            console.log("Bana3 ound.");
-            break;
-          case 4:
-            console.log("Ch400 a pound.");
-            break;
-          case 5:
-            console.log("Che5s are $3.00 a pound.");
-            break;
-          case 6:
-            console.log("M6 are $2.79 a pound.");
-            break;
-          case 7:
-            console.log("M7ayas are $2.79 a pound.");
-            break;
-          case 8:
-            console.log("M8payas are $2.79 a pound.");
-            break;
-          case 9:
             if (State.Status == false) {
               let notifications = new Notification({
-                title: `Muy pronto la actividad ${State.Activityname} para ${State.name} ${State.lastname}  `,
-                Content: `Debera de completarse antes del  ${State.DateToComplete} a las ${State.TimeToComplete} El no seguir el tratamiento para el control de tus niveles de tensión arterial de forma adecuada aumenta 69.69% tus posibilidades de sufrir un infarto cerebral.`,
+                title: `El realizar de manera habitual las diferentes actividades asignadas durante la semana te ayuda a prevenir diferentes complicaciones derivadas de un control inadecuado de la enfermedad. Continúa cuidando tu salud y sigue al pie de la letra las indicaciones de tus médicos.  Muy pronto la actividad ${State.Activityname} para ${State.name} ${State.lastname}  `,
+                Content: `Debera de completarse antes del  ${State.DateToComplete} a las ${State.TimeToComplete}, Al no tomar una aspirina diaria podrías aumentar tus probabilidades de sufrir un infarto cardiaco en un 65.51%.`,
                 user_id: medic,
               });
               notifications.save().then(() => {
@@ -422,7 +293,133 @@ function getremind(time) {
               });
             } else if (State.Status == true) {
               let notifications = new Notification({
-                title: `Bien hecho la ${State.Activityname} para ${State.name} ${State.lastname} fue completada exitosamente `,
+                title: `Bien hecho la actividad ${State.Activityname} para ${State.name} ${State.lastname} fue completada exitosamente `,
+                Content: `Al tomar una aspirina diaria como habito de prevención reduces la probabilidad de sufrir un infarto al corazón en un 65.51%. `,
+                user_id: medic,
+              });
+              notifications.save().then(() => {
+                console.log("new Notification");
+              });
+            }
+            break;
+          case 4:
+            if ( State.Status == false) {
+              let notifications = new Notification({
+                title: `El realizar de manera habitual las diferentes actividades asignadas durante la semana te ayuda a prevenir diferentes complicaciones derivadas de un control inadecuado de la enfermedad. Continúa cuidando tu salud y sigue al pie de la letra las indicaciones de tus médicos.  Muy pronto la actividad ${State.Activityname} para ${State.name} ${State.lastname}  `,
+                Content: `Debera de completarse antes del  ${State.DateToComplete} a las ${State.TimeToComplete}, Al no cumplir con el tratamiento indicado por tu médico de forma adecuada aumentas tus posibilidades de desarrollar insuficiencia renal aguda en un 86.11% y de presentar un infarto cardiaco en un 79.16%. `,
+                user_id: medic,
+              });
+              notifications.save().then(() => {
+                console.log("new Notification");
+              });
+            } else if ( State.Status == true) {
+              let notifications = new Notification({
+                title: `Bien hecho la actividad ${State.Activityname} para ${State.name} ${State.lastname} fue completada exitosamente `,
+                Content: `llevar acabo un adecuado control de los niveles de glucosa en la sangre, con el apoyo del tratamiento indicado, reduces en un 86.11% tus probabilidades de desarrollar Insuficiencia renal aguda y 79.16 la probabilidad de sufrir un infarto cardiaco. `,
+                user_id: medic,
+              });
+              notifications.save().then(() => {
+                console.log("new Notification");
+              });
+            } 
+            break;
+          case 5:
+            if (State.Status == false) {
+              let notifications = new Notification({
+                title: `El realizar de manera habitual las diferentes actividades asignadas durante la semana te ayuda a prevenir diferentes complicaciones derivadas de un control inadecuado de la enfermedad. Continúa cuidando tu salud y sigue al pie de la letra las indicaciones de tus médicos.  Muy pronto la actividad ${State.Activityname} para ${State.name} ${State.lastname}  `,
+                Content: `Debera de completarse antes del  ${State.DateToComplete} a las ${State.TimeToComplete}, Es importante que revises de forma habitual tus niveles de glucosa en sangre capilar pues un control inadecuado puede desencadenar complicaciones como disminución o perdida de la vista, aparición de ulceras o amputación en pies o piernas, insuficiencia renal aguda e infarto cardiaco. `,
+                user_id: medic,
+              });
+              notifications.save().then(() => {
+                console.log("new Notification");
+              });
+            } else if (State.Status == true) {
+              let notifications = new Notification({
+                title: `Bien hecho la actividad ${State.Activityname} para ${State.name} ${State.lastname} fue completada exitosamente `,
+                Content: `Al revisar con frecuencia tus niveles de azúcar en la sangre puedes prevenir diferentes complicaciones de la diabetes como:  disminución o pérdida total de la vista, insuficiencia renal aguda, ulceraciones en pies o piernas e infarto cardiaco.  `,
+                user_id: medic,
+              });
+              notifications.save().then(() => {
+                console.log("new Notification");
+              });
+            } 
+            break;
+          case 6:
+            if ( State.Status == false) {
+              let notifications = new Notification({
+                title: `El realizar de manera habitual las diferentes actividades asignadas durante la semana te ayuda a prevenir diferentes complicaciones derivadas de un control inadecuado de la enfermedad. Continúa cuidando tu salud y sigue al pie de la letra las indicaciones de tus médicos.  Muy pronto la actividad ${State.Activityname} para ${State.name} ${State.lastname} `,
+                Content: `Debera de completarse antes del  ${State.DateToComplete} a las ${State.TimeToComplete}, El que tus niveles de lípidos en la sangre no sean los adecuados puede provocar la necesidad de medicamentos para su control, lo que aumenta 75% tus posibilidades de desarrollar insuficiencia renal aguda.`,
+                user_id: medic,
+              });
+              notifications.save().then(() => {
+                console.log("new Notification");
+              });
+            } else if (State.Status == true) {
+              let notifications = new Notification({
+                title: `Bien hecho la actividad ${State.Activityname} para ${State.name} ${State.lastname} fue completada exitosamente  `,
+                Content: `Mantener tus niveles de lípidos en la sangre evita que requieras para ello el apoyo de medicamentos, disminuyendo así un 75% tus probabilidades de desarrollar insuficiencia renal aguda. `,
+                user_id: medic,
+              });
+              notifications.save().then(() => {
+                console.log("new Notification");
+              });
+            }
+            break;
+          case 7:
+            if (State.Status == false) {
+              let notifications = new Notification({
+                title: `El realizar de manera habitual las diferentes actividades asignadas durante la semana te ayuda a prevenir diferentes complicaciones derivadas de un control inadecuado de la enfermedad. Continúa cuidando tu salud y sigue al pie de la letra las indicaciones de tus médicos.  Muy pronto la actividad ${State.Activityname} para ${State.name} ${State.lastname}  `,
+                Content: `Debera de completarse antes del  ${State.DateToComplete} a las ${State.TimeToComplete}, El consumir bebidas alcohólicas aumenta 83.33% tus posibilidades de desarrollar insuficiencia renal aguda y contribuye al desarrollo de otras complicaciones como disminución o perdida de la vista e infarto cardiaco. `,
+                user_id: medic,
+              });
+              notifications.save().then(() => {
+                console.log("new Notification");
+              });
+            } else if (State.Status == true) {
+              let notifications = new Notification({
+                title: `Bien hecho la actividad ${State.Activityname} para ${State.name} ${State.lastname} fue completada exitosamente `,
+                Content: `Al evitar el consumo de bebidas alcohólicas disminuyes 83.33% tus posibilidades de desarrollar insuficiencia renal aguda. Además previenes otras complicaciones como disminución o perdida de la vista e infarto cardiaco. `,
+                user_id: medic,
+              });
+              notifications.save().then(() => {
+                console.log("new Notification");
+              });
+            } 
+            break;
+          case 8:
+            if (State.Status == false) {
+              let notifications = new Notification({
+                title: `El realizar de manera habitual las diferentes actividades asignadas durante la semana te ayuda a prevenir diferentes complicaciones derivadas de un control inadecuado de la enfermedad. Continúa cuidando tu salud y sigue al pie de la letra las indicaciones de tus médicos.  Muy pronto la actividad ${State.Activityname} para ${State.name} ${State.lastname}  `,
+                Content: `Debera de completarse antes del  ${State.DateToComplete} a las ${State.TimeToComplete}, El fumar aumenta 75% tus probabilidades de desarrollar ulceras en pies o piernas, lo que podría generarte problemas más graves como es la amputación de la extremidad.`,
+                user_id: medic,
+              });
+              notifications.save().then(() => {
+                console.log("new Notification");
+              });
+            } else if (State.Status == true) {
+              let notifications = new Notification({
+                title: `Bien hecho la actividad ${State.Activityname} para ${State.name} ${State.lastname} fue completada exitosamente `,
+                Content: `Al evitar el consumo de tabaco o dejar de fumar disminuyes 75% tus posibilidades de desarrollar ulceras en pies o piernas. `,
+                user_id: medic,
+              });
+              notifications.save().then(() => {
+                console.log("new Notification");
+              });
+            } 
+            break;
+          case 9:
+            if (State.Status == false) {
+              let notifications = new Notification({
+                title: `El realizar de manera habitual las diferentes actividades asignadas durante la semana te ayuda a prevenir diferentes complicaciones derivadas de un control inadecuado de la enfermedad. Continúa cuidando tu salud y sigue al pie de la letra las indicaciones de tus médicos.  Muy pronto la actividad ${State.Activityname} para ${State.name} ${State.lastname}  `,
+                Content: `Debera de completarse antes del  ${State.DateToComplete} a las ${State.TimeToComplete}, El no seguir el tratamiento para el control de tus niveles de tensión arterial de forma adecuada aumenta 69.69% tus posibilidades de sufrir un infarto cerebral.`,
+                user_id: medic,
+              });
+              notifications.save().then(() => {
+                console.log("new Notification");
+              });
+            } else if (State.Status == true) {
+              let notifications = new Notification({
+                title: `Bien hecho la actividad ${State.Activityname} para ${State.name} ${State.lastname} fue completada exitosamente `,
                 Content: `El cumplir de manera adecuada el tratamiento para controlar tus niveles de tensión arterial te ayuda a prevenir un 69.69% la probabilidad de sufrir un infarto cerebral.`,
                 user_id: medic,
               });
@@ -432,7 +429,15 @@ function getremind(time) {
             }
             break;
           default:
-            console.log("fuerra");
+            let notifications = new Notification({
+              title: `Muy pronto la actividad ${State.Activityname} para ${State.name} ${State.lastname}  `,
+              Content: `Debera de completarse antes del  ${State.DateToComplete} a las ${State.TimeToComplete}`,
+              user_id: medic
+            })
+              notifications.save().then(() => {
+                console.log("new Notification")
+              })
+             
         }
       };
 

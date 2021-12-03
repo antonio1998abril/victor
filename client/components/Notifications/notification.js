@@ -22,7 +22,7 @@ function notification({noti,deleteNoti}) {
                 <div className="alert alert-warning alert-dismissible">
                   <button onClick={()=>deleteNoti(noti._id)} type="button" className="close" data-dismiss="alert" aria-hidden="true">×</button>
                   <h5> <FontAwesomeIcon icon={faExclamationTriangle} /> Nueva Alerta! {noti.title}</h5>
-                 {noti.Content}
+                 <h4>{noti.Content}</h4>
                 </div>
 
                 

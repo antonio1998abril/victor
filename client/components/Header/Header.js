@@ -63,7 +63,7 @@ function Header() {
             <Container>
                 <Navbar.Brand href="/">
                     <Image src="/logo2.png" width="30 "height="30" alt="Diabetins" className="MagNet ubuntu"/>
-                    &nbsp; Diabetins
+                    &nbsp; Diabet-INS
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse >

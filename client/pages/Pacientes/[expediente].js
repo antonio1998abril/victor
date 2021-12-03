@@ -230,7 +230,7 @@ if (!loaded) { return <div></div> }
                 <div className="form-group ">
                     <label  className="col-sm-12 col-form-label">Nivel Hemoglobina Glicosilada (HbA1c) </label>
                     <div className="col-sm-12">
-                      <input name="HemoglobinaglucosiladaHbA1c" min="0" max="8"
+                      <input name="HemoglobinaglucosiladaHbA1c" min="0" max="1000"
                       value={expediente.HemoglobinaglucosiladaHbA1c} type="number"
                       onChange={handleChangeExpediente}  className="form-control"  placeholder="Hemoglobina Glicosilada"/>
                     </div>
@@ -239,7 +239,7 @@ if (!loaded) { return <div></div> }
                 <div className="form-group ">
                     <label  className="col-sm-12 col-form-label">Leucocitos por: miles/μL</label>
                     <div className="col-sm-12">
-                      <input name="Leucocitos" min="4.50" max="10.00"
+                      <input name="Leucocitos" min="0" max="1000"
                       value={expediente.Leucocitos} type="number"
                       onChange={handleChangeExpediente}  className="form-control"  placeholder="Leucocitos"/>
                     </div>
@@ -247,7 +247,7 @@ if (!loaded) { return <div></div> }
                 <div className="form-group ">
                     <label  className="col-sm-12 col-form-label">Eritrocitos por: millones/μL</label>
                     <div className="col-sm-12">
-                      <input name="Eritrocitos" min="4.50" max="5.20"
+                      <input name="Eritrocitos" min="0" max="1000"
                       value={expediente.Eritrocitos} type="number"
                       onChange={handleChangeExpediente}  className="form-control"  placeholder="Eritrocitos"/>
                     </div>
@@ -255,7 +255,7 @@ if (!loaded) { return <div></div> }
                 <div className="form-group ">
                     <label  className="col-sm-12 col-form-label">Hemoglobina por: g/dL </label>
                     <div className="col-sm-12">
-                      <input name="Hemoglobina" min="12.00" max="16.00"
+                      <input name="Hemoglobina" min="0" max="1000"
                       value={expediente.Hemoglobina} type="number"
                       onChange={handleChangeExpediente}  className="form-control"  placeholder="Hemoglobina"/>
                     </div>
@@ -263,7 +263,7 @@ if (!loaded) { return <div></div> }
                 <div className="form-group ">
                     <label  className="col-sm-12 col-form-label">Hematocrito  por: %</label>
                     <div className="col-sm-12">
-                      <input name="Hematocrito" min="34.0" max="47.0"
+                      <input name="Hematocrito" min="0" max="1000"
                       value={expediente.Hematocrito} type="number"
                       onChange={handleChangeExpediente}  className="form-control"  placeholder="Hematocrito"/>
                     </div>
@@ -271,7 +271,7 @@ if (!loaded) { return <div></div> }
                 <div className="form-group ">
                     <label  className="col-sm-12 col-form-label">Volumen corpuscular medio  fL</label>
                     <div className="col-sm-12">
-                      <input name="Volumencorpuscularmedio" min="78.0" max="99.0"
+                      <input name="Volumencorpuscularmedio" min="0" max="1000"
                       value={expediente.Volumencorpuscularmedio} type="number"
                       onChange={handleChangeExpediente}  className="form-control"  placeholder="Volumen corpuscular medio"/>
                     </div>
@@ -279,7 +279,7 @@ if (!loaded) { return <div></div> }
                 <div className="form-group ">
                     <label  className="col-sm-12 col-form-label">Hemoglobina corpuscular media pg</label>
                     <div className="col-sm-12">
-                      <input name="Hemoglobinacorpuscularmedia" min="27.0" max="31.0"
+                      <input name="Hemoglobinacorpuscularmedia" min="0" max="1000"
                       value={expediente.Hemoglobinacorpuscularmedia} type="number"
                       onChange={handleChangeExpediente}  className="form-control"  placeholder="Hemoglobina corpuscular media"/>
                     </div>
@@ -287,7 +287,7 @@ if (!loaded) { return <div></div> }
                 <div className="form-group ">
                     <label  className="col-sm-12 col-form-label">Concentración media de hemoglobina corpuscular g/dL (%) </label>
                     <div className="col-sm-12">
-                      <input name="Concentracionmediadehemoglobinacorpuscular" min="32.0" max="36.0"
+                      <input name="Concentracionmediadehemoglobinacorpuscular" min="0" max="1000"
                       value={expediente.Concentracionmediadehemoglobinacorpuscular} type="number"
                       onChange={handleChangeExpediente}  className="form-control"  placeholder="Concentración media de hemoglobina corpuscular"/>
                     </div>
@@ -295,7 +295,7 @@ if (!loaded) { return <div></div> }
                 <div className="form-group ">
                     <label  className="col-sm-12 col-form-label">Ancho de distribución de eritrocitos 11.5 – 17.0 %</label>
                     <div className="col-sm-12">
-                      <input name="Anchodedistribuciondeeritrocitos" min="11.5" max="17.0"
+                      <input name="Anchodedistribuciondeeritrocitos" min="0" max="1000"
                       value={expediente.Anchodedistribuciondeeritrocitos} type="number"
                       onChange={handleChangeExpediente}  className="form-control"  placeholder="Ancho de distribución de eritrocitos"/>
                     </div>
@@ -304,7 +304,7 @@ if (!loaded) { return <div></div> }
                  <div className="form-group ">
                     <label  className="col-sm-12 col-form-label">Plaquetas por: miles/μL</label>
                     <div className="col-sm-12">
-                      <input type="number"  min="150" max="500" name="Plaquetas"
+                      <input type="number"  min="0" max="1000" name="Plaquetas"
                       value={expediente.Plaquetas} 
                       onChange={handleChangeExpediente} className="form-control"  placeholder="Plaquetas"/>
                     </div>
@@ -313,7 +313,7 @@ if (!loaded) { return <div></div> }
                 <div className="form-group ">
                     <label  className="col-sm-12 col-form-label">Neutrofilos por:  %</label>
                     <div className="col-sm-12">
-                      <input type="number" min="34" max="74.0"  name="Neutrofilos"
+                      <input type="number" min="0" max="1000"  name="Neutrofilos"
                       value={expediente.Neutrofilos} 
                       onChange={handleChangeExpediente} className="form-control"  placeholder="Neutrofilos"/>
                     </div>
@@ -322,14 +322,14 @@ if (!loaded) { return <div></div> }
                     <label  className="col-sm-12 col-form-label">Linfocitos por: %</label>
                     <div className="col-sm-12">
                       <input type="number"  name="Linfocitos"
-                      value={expediente.Linfocitos}  min="21.0" max="48.0"
+                      value={expediente.Linfocitos}  min="0" max="1000"
                       onChange={handleChangeExpediente} className="form-control"  placeholder="Linfocitos"/>
                     </div>
                 </div>
                 <div className="form-group ">
                     <label className="col-sm-12 col-form-label">Monocitos por: %</label>
                     <div className="col-sm-12">
-                      <input type="number"  min="2.0" max="8.0" name="Monocitos"
+                      <input type="number"  min="0" max="1000" name="Monocitos"
                       value={expediente.Monocitos} 
                       onChange={handleChangeExpediente} className="form-control"  placeholder="Monocitos"/>
                     </div>
@@ -337,7 +337,7 @@ if (!loaded) { return <div></div> }
                 <div className="form-group ">
                     <label className="col-sm-12 col-form-label">Basofilos por: %</label>
                     <div className="col-sm-12">
-                      <input type="number"  min="0.0" max="1.0" name="Basofilos"
+                      <input type="number"  min="0" max="1000" name="Basofilos"
                       value={expediente.Basofilos} 
                       onChange={handleChangeExpediente} className="form-control"  placeholder="Basofilos"/>
                     </div>
@@ -345,7 +345,7 @@ if (!loaded) { return <div></div> }
                 <div className="form-group ">
                     <label className="col-sm-12 col-form-label">Eosinofilos por: %</label>
                     <div className="col-sm-15">
-                      <input type="number" rows="2" min="0.0" max="4.0" name="Eosinofilos"
+                      <input type="number" rows="2" min="0" max="1000" name="Eosinofilos"
                       value={expediente.Eosinofilos} 
                       onChange={handleChangeExpediente} className="form-control"  placeholder="Eosinofilos"/>
                     </div>
@@ -374,7 +374,7 @@ if (!loaded) { return <div></div> }
                 <div className="form-group row">
                     <label  className="col-sm-3 col-form-label"> Gravedadespecifica g/mL</label>
                     <div className="col-sm-9">
-                      <input type="number" rows="2" min="1.016" max= "1.022"  name="Gravedadespecifica"
+                      <input type="number" rows="2" min="0" max= "1000"  name="Gravedadespecifica"
                       value={expediente.Gravedadespecifica}
                       onChange={handleChangeExpediente} className="form-control"   placeholder="Gravedadespecifica"/>
                     </div>
@@ -383,7 +383,7 @@ if (!loaded) { return <div></div> }
                 <div className="form-group row">
                     <label  className="col-sm-3 col-form-label"> Reacción PH</label>
                     <div className="col-sm-9">
-                      <input type="number" rows="2" min="4.80" max= "7.40"  name="ReaccionPH"
+                      <input type="number" rows="2" min="0" max= "1000"  name="ReaccionPH"
                       value={expediente.ReaccionPH}
                       onChange={handleChangeExpediente} className="form-control"   placeholder="Reacción PH"/>
                     </div>
@@ -392,24 +392,44 @@ if (!loaded) { return <div></div> }
                 <div className="form-group row">
                     <label  className="col-sm-3 col-form-label"> Esterasa leucocitaria</label>
                     <div className="col-sm-9">
-                      <textarea type="text" rows="2"  name="Esterasaleucocitaria"
+                      {/* <textarea type="number" rows="2"  min="0" max="1000" name="Esterasaleucocitaria"
                       value={expediente.Esterasaleucocitaria}
-                      onChange={handleChangeExpediente} className="form-control"   placeholder="Esterasa leucocitaria"/>
+                      onChange={handleChangeExpediente} className="form-control"   placeholder="Esterasa leucocitaria"/> */}
+                                 <select
+                className="form-select form-select-lg mb-3"
+                name="Esterasaleucocitaria"
+                placeholder="Esterasa leucocitaria"
+                defaultValue={expediente.Esterasaleucocitaria}
+                onChange={handleChangeExpediente}
+              >
+                <option value="Ninguno">Ninguno</option>
+                <option value="Positivo">Positivo</option>
+                <option value="Negativo">Negativo</option>
+              </select>
                     </div>
                 </div>
 
                 <div className="form-group row">
                     <label  className="col-sm-3 col-form-label">  Nitritos </label>
                     <div className="col-sm-9">
-                      <textarea type="text" rows="2"   name="Nitritos"
-                      value={expediente.Nitritos}
-                      onChange={handleChangeExpediente} className="form-control"   placeholder=" Nitritos"/>
+                      <select
+                className="form-select form-select-lg mb-3"
+                name="Nitritos"
+                placeholder=" Nitritos"
+                defaultValue={expediente.Nitritos}
+                onChange={handleChangeExpediente}
+              >
+                <option value="Ninguno">Ninguno</option>
+                <option value="Positivo">Positivo</option>
+                <option value="Negativo">Negativo</option>
+              </select>
+                      
                     </div>
                 </div>
                 <div className="form-group row">
                     <label  className="col-sm-3 col-form-label"> Proteinas 10.00 mg/dL</label>
                     <div className="col-sm-9">
-                      <input type="number"  rows="2"  min="0.00" max="10.00"name="Proteinas"
+                      <input type="number"  rows="2"  min="0" max="1000"name="Proteinas"
                       value={expediente.Proteinas} 
                       onChange={handleChangeExpediente} className="form-control"  placeholder="Proteinas"/>
                     </div>
@@ -418,34 +438,68 @@ if (!loaded) { return <div></div> }
                 <div className="form-group row">
                     <label  className="col-sm-3 col-form-label"> Glucosa</label>
                     <div className="col-sm-9">
-                      <input type="text"  rows="2" name="Glucosa"
+                      {/* <input type="number"  rows="2" min="0" max="1000" name="Glucosa"
                       value={expediente.Glucosa} 
                       onChange={handleChangeExpediente} className="form-control"  placeholder="Glucosa"/>
-                    </div>
+                     */}
+                    <select
+                className="form-select form-select-lg mb-3"
+                name="Glucosa"
+                placeholder="Glucosa"
+                defaultValue={expediente.Glucosa}
+                onChange={handleChangeExpediente}
+              >
+                <option value="Ninguno">Ninguno</option>
+                <option value="Fuera de rango">Fuera de rango</option>
+                <option value="Normal">Normal</option>
+              </select>
+              </div>
                 </div>
 
                 <div className="form-group row">
                     <label  className="col-sm-3 col-form-label"> Eritrocitos Hb</label>
                     <div className="col-sm-9">
-                      <input type="text"  rows="2"  name="EritrocitosHb"
+{/*                       <input type="number" min="0" max="1000" rows="2"  name="EritrocitosHb"
                       value={expediente.EritrocitosHb} 
-                      onChange={handleChangeExpediente} className="form-control"  placeholder="Eritrocitos Hb"/>
+                      onChange={handleChangeExpediente} className="form-control"  placeholder="Eritrocitos Hb"/> */}
+
+<select
+                className="form-select form-select-lg mb-3"
+                name="EritrocitosHb"
+                placeholder="Eritrocitos Hb"
+                defaultValue={expediente.EritrocitosHb}
+                onChange={handleChangeExpediente}
+              >
+                <option value="Ninguno">Ninguno</option>
+                <option value="Positivo">Positivo</option>
+                <option value="Negativo">Negativo</option>
+              </select>
                     </div>
                 </div>
 
                 <div className="form-group row">
                     <label  className="col-sm-3 col-form-label">Cetonas</label>
                     <div className="col-sm-9">
-                      <input type="text"  rows="2"  name="Cetonas"
-                      value={expediente.Cetonas} 
-                      onChange={handleChangeExpediente} className="form-control"  placeholder="Cetonas"/>
+                <select
+                className="form-select form-select-lg mb-3"
+                name="Cetonas"
+                placeholder="Cetonas"
+                defaultValue={expediente.Cetonas}
+                onChange={handleChangeExpediente}
+              >
+                <option value="Ninguno">Ninguno</option>
+                <option value="Positivo">Positivo</option>
+                <option value="Negativo">Negativo</option>
+              </select>
                     </div>
                 </div>
+
+
 
                 <div className="form-group row">
                     <label  className="col-sm-3 col-form-label"> Urobilinogeno por mg/dL</label>
                     <div className="col-sm-9">
-                      <input type="number" rows="2" min="0.00" max= "1.00"  name="Urobilinogeno"
+                      <input type="number" rows="2" min="0" max= "1000"  name="Urobilinogeno"
                       value={expediente.Urobilinogeno}
                       onChange={handleChangeExpediente} className="form-control"   placeholder="Urobilinogeno"/>
                     </div>
@@ -454,7 +508,7 @@ if (!loaded) { return <div></div> }
                 <div className="form-group row">
                     <label  className="col-sm-3 col-form-label"> Bilirubinas por mg/dL</label>
                     <div className="col-sm-9">
-                      <input type="number" rows="2" min="0.00" max= "0.20"  name="Bilirubinas"
+                      <input type="number" rows="2" min="0" max= "1000"  name="Bilirubinas"
                       value={expediente.Bilirubinas}
                       onChange={handleChangeExpediente} className="form-control"   placeholder="Bilirubinas"/>
                     </div>
@@ -484,7 +538,7 @@ if (!loaded) { return <div></div> }
                 <div className="form-group row">
                     <label  className="col-sm-3 col-form-label"> Ácido Úrico por mg/dL</label>
                     <div className="col-sm-9">
-                      <input type="number" rows="2" min="2.40" max= "5.70"  name="acidourico"
+                      <input type="number" rows="2" min="0" max= "1000"  name="acidourico"
                       value={expediente.acidourico}
                       onChange={handleChangeExpediente} className="form-control"   placeholder="Ácido Úrico"/>
                     </div>
@@ -493,7 +547,7 @@ if (!loaded) { return <div></div> }
                 <div className="form-group row">
                     <label  className="col-sm-3 col-form-label"> Creatinina por mg/dL</label>
                     <div className="col-sm-9">
-                      <input type="number" rows="2" min="0.50" max= "0.90"  name="Creatinina"
+                      <input type="number" rows="2" min="0" max= "1000"  name="Creatinina"
                       value={expediente.Creatinina}
                       onChange={handleChangeExpediente} className="form-control"   placeholder="Creatinina"/>
                     </div>
@@ -502,7 +556,7 @@ if (!loaded) { return <div></div> }
                 <div className="form-group row">
                     <label  className="col-sm-3 col-form-label">Nitrógeno ureico (BUN) por mg/dL</label>
                     <div className="col-sm-9">
-                      <input type="number" rows="2" min="6.00" max= "20.00"  name="NitrogenoureicoBUN"
+                      <input type="number" rows="2" min="0" max= "1000"  name="NitrogenoureicoBUN"
                       value={expediente.NitrogenoureicoBUN}
                       onChange={handleChangeExpediente} className="form-control"   placeholder="Nitrógeno ureico (BUN)"/>
                     </div>
@@ -511,7 +565,7 @@ if (!loaded) { return <div></div> }
                 <div className="form-group row">
                     <label  className="col-sm-3 col-form-label"> Urea por mg/dL</label>
                     <div className="col-sm-9">
-                      <input type="number" rows="2" min="16.60" max= "48.5"  name="Urea"
+                      <input type="number" rows="2" min="0" max= "1000"  name="Urea"
                       value={expediente.Urea}
                       onChange={handleChangeExpediente} className="form-control"   placeholder="Urea"/>
                     </div>
@@ -537,7 +591,7 @@ if (!loaded) { return <div></div> }
                 <div className="form-group row">
                     <label  className="col-sm-12 col-form-label">Colesterol HDL por mg/dL</label>
                     <div className="col-sm-9">
-                      <input type="number" rows="2" min="35.00" max= "45.00"  name="ColesterolHDL"
+                      <input type="number" rows="2" min="0" max= "1000"  name="ColesterolHDL"
                       value={expediente.ColesterolHDL}
                       onChange={handleChangeExpediente} className="form-control"   placeholder="Colesterol HDL"/>
                     </div>
@@ -545,7 +599,7 @@ if (!loaded) { return <div></div> }
                 <div className="form-group row">
                     <label  className="col-sm-12 col-form-label">Colesterol LDL por mg/dL</label>
                     <div className="col-sm-9">
-                      <input type="number" rows="2" min="60" max= "130"  name="ColesterolLDL"
+                      <input type="number" rows="2" min="0" max= "1000"  name="ColesterolLDL"
                       value={expediente.ColesterolLDL}
                       onChange={handleChangeExpediente} className="form-control"   placeholder="Colesterol LDL"/>
                     </div>
@@ -553,7 +607,7 @@ if (!loaded) { return <div></div> }
                 <div className="form-group row">
                     <label  className="col-sm-12 col-form-label">Trigliceridos por mg/dL</label>
                     <div className="col-sm-9">
-                      <input type="number" rows="2" min="0" max= "150"  name="Trigliceridos"
+                      <input type="number" rows="2" min="0" max= "1000"  name="Trigliceridos"
                       value={expediente.Trigliceridos}
                       onChange={handleChangeExpediente} className="form-control"   placeholder="Trigliceridos"/>
                     </div>
@@ -561,7 +615,7 @@ if (!loaded) { return <div></div> }
                 <div className="form-group row">
                     <label  className="col-sm-12 col-form-label">Colesterol total por mg/dL</label>
                     <div className="col-sm-9">
-                      <input type="number" rows="2" min="00" max= "200"  name="Colesteroltotal"
+                      <input type="number" rows="2" min="0" max= "1000"  name="Colesteroltotal"
                       value={expediente.Colesteroltotal}
                       onChange={handleChangeExpediente} className="form-control"   placeholder="Colesterol total"/>
                     </div>
